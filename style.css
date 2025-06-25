@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+/*Time box*/
+.time{
+    background-color: rgba(238, 221, 221, 0.605);
+    width: fit-content;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+}
+#get-location{
+    padding: 2px;
+    border-radius: 5px;
+    font-size: large;
+    transition: 1s ease;
+    margin-left: 50px;
+}
+#get-location:hover{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+/*Main Box*/
+.card{
+    background-color: rgba(238, 221, 221, 0.855);
+    width: 500px;
+    border-radius: 30px;
+    padding: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-bar{
+    font-size: 24px;
+    border-radius: 40px;
+    border: none;
+    padding: 5px 15px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+.material-symbols-outlined{
+    position: absolute;
+    color: white;
+    margin-right: -10em;
+}
+.result{
+    padding: 0px 20px;
+}
+.weather_icon{
+    width: 10%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Media Query for mobile */
+@media (max-width: 1150px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+        display: block;
+    }
+
+    .search-bar {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .time{
+        position: relative;
+        margin: 0px 20px;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.2rem;
+        margin-left: -90px;
+    }
+
+    .result h1.temp {
+        font-size: 2rem;
+    }
+
+    .weather_icon {
+        width: 40px;
+    }
+}
+
+@media  (max-width: 550px){
+    .card{
+        margin-top: 30px;
+        padding: 20px;
+        width: 100%;
+        display: block;
+    }
+    .search-bar{
+        font-size: 10px;
+    }
+    .time{
+        width: 100%;
+        position: relative;
+        margin-left: 40px;
+        top: 0px;
+    }
+    .material-symbols-outlined {
+        font-size: 1.2rem;
+        margin-right: -50%;
+    }
+}
